@@ -1,6 +1,6 @@
 {
   "name": "sorted-collection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An high-performance array-like JavaScript collection that maintains the sort order of its elements. To be used in place of a regular array of objects.",
   "keywords": [
     "sorted",
