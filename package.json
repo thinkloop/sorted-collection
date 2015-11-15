@@ -1,6 +1,6 @@
 {
   "name": "sorted-collection",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An array-like JavaScript collection that maintains the sort order of its elements. To be used in place of a regular array of objects.",
   "keywords": [
     "sorted",
@@ -22,11 +22,9 @@
     "url": "https://github.com/thinkloop/sorted-collection/issues"
   },
   "homepage": "https://github.com/thinkloop/sorted-collection#readme",
-  
   "devDependencies": {
     "jest-cli": "0.7.x"
   },
-  
   "jest": {
     "testPathIgnorePatterns": [
       "/node_modules/",
