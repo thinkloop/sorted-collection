@@ -1,7 +1,7 @@
 {
   "name": "sorted-collection",
-  "version": "1.0.0",
-  "description": "A smart array-like JavaScript collection that makes it easy to maintain the sort order of a collection of objects.",
+  "version": "1.0.1",
+  "description": "An array-like JavaScript collection that maintains the sort order of its elements. To be used in place of a regular array of objects.",
   "keywords": [
     "sorted",
     "array",
