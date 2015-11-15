@@ -6,7 +6,7 @@ An array-like JavaScript collection that maintains the sort order of its element
 In addition to basic Array functions like `push`, `splice`, `unshift`, and `forEach`, SortedCollection introduces new sort-oriented functions, like: 
 `insert`. 
 
-When a valued is `insert'ed`, it is automatically spliced into the correct position in the collection based on the collection's `sortDefinition`.
+When a valued is `insert`'ed into the collection, it is automatically spliced into the correct position based on the collection's `sortDefinition`.
 
 ## Installation
 
