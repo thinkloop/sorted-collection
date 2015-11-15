@@ -7,7 +7,7 @@ In addition to basic Array functions like `push`, `splice`, `unshift`, `forEach`
 
 ## Installation
 
-    npm install sorted-collection
+	npm install sorted-collection
 
 ## Usage
 
