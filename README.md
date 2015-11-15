@@ -39,7 +39,7 @@ When a value is `insert'ed` into the collection, it is automatically spliced int
     sortedCollection.insert({ id: 3, name: 'K' });
     sortedCollection.insert({ id: 4, name: 'Z' });
     
-    // notice order is
+    // the order of items is properly sorted
     console.log('1st item is id #2:', sortedCollection[0]);
     console.log('2nd item is id #3:', sortedCollection[1]);
     console.log('3rd item is id #4:', sortedCollection[2]);
