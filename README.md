@@ -1,7 +1,7 @@
 SortedCollection
 =========
 
-An array-like JavaScript collection that maintains the sort order of its elements. To be used in place of a regular array of objects.
+A high-performance array-like JavaScript collection that maintains the sort order of its elements. To be used in place of a regular array of objects.
 
 In addition to basic Array functions like `push`, `splice`, `unshift`, and `forEach`, SortedCollection introduces new sort-oriented functions, like: 
 `insert`. 
