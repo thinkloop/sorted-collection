@@ -1,0 +1,39 @@
+{
+  "name": "sorted-collection",
+  "version": "1.0.0",
+  "description": "A smart array-like JavaScript collection that makes it easy to maintain the sort order of a collection of objects.",
+  "keywords": [
+    "sorted",
+    "array",
+    "collection",
+    "javascript"
+  ],
+  "author": "Baz <bk@thinkloop.com>",
+  "license": "MIT",
+  "main": "sorted-collection.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkloop/sorted-collection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thinkloop/sorted-collection/issues"
+  },
+  "homepage": "https://github.com/thinkloop/sorted-collection#readme",
+  
+  "devDependencies": {
+    "jest-cli": "0.7.x"
+  },
+  
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.c9"
+    ],
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ]
+  }
+}
