@@ -54,7 +54,7 @@ The default `sortDefinition` sorts by id:
 
 ## Contributing
 
-Send a pull request for any changes you recommend. 
+Send a GitHub pull request for any changes you recommend. 
 Please add or update unit tests for any new or changed functionality.
 
 ## Release History

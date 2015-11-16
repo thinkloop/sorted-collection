@@ -1,6 +1,7 @@
 var SortedCollection = function()  {
+	this.index = {};
+	this.length = 0;	
 	this.sortDefinition = [{ property: 'id', direction: 'asc' }];
-	this.clear();
 	return this;
 };
 
