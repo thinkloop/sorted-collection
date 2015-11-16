@@ -9,7 +9,7 @@ In addition to basic Array functions like `push`, `splice`, `unshift`, and `forE
 When a value is `insert'ed` into the collection, it is automatically spliced to the correct position based on the collection's `sortDefinition`. 
 The default `sortDefinition` sorts by id: 
 
-`[{ property: 'id', direction: 'asc' }]`
+    `[{ property: 'id', direction: 'asc' }]`
 
 ## Installation
 
