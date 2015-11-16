@@ -13,7 +13,7 @@ The default `sortDefinition` sorts by id:
 
 ## Installation
 
-	npm install sorted-collection
+	npm install sorted-collection --save
 
 ## Basic
 
