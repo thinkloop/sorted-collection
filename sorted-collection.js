@@ -1,11 +1,17 @@
 var SortedCollection = function()  {
-	this.index = {};
 	this.sortDefinition = [{ property: 'id', direction: 'asc' }];
-	this.length = 0;
+	this.clear();
 	return this;
 };
 
 SortedCollection.prototype = {
+
+	// clear the collection's data
+	clear: function(item) {
+		this.index = {};
+		this.length = 0;
+		return this;
+	},
 	
 	// add an item to the collection at its sorted position
 	insert: function(item) {
@@ -135,7 +141,7 @@ SortedCollection.prototype = {
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * * REGULAR ARRAY FUNCTIONS
     * *
-    * * These functions behave exactly like their Array countrparts, while maintaining index
+    * * These functions behave like their Array countrparts while maintaining the collection's index
     * * They do NOT take into account sort order! Call sort() afterward if you are unsure 
     * * whether your collection is still properly sorted 
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -143,11 +149,13 @@ SortedCollection.prototype = {
     push: function(item) {
 		Array.prototype.push.call(this, item);
 		this.index[item.id] = item;
+		return this;
 	},
 
 	unshift: function(item) {
 		Array.prototype.unshift.call(this, item);
 		this.index[item.id] = item;
+		return this;
 	},
 
 	splice: function(pos, num, item) {
