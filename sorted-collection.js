@@ -43,7 +43,7 @@ SortedCollection.prototype = {
 		return this;
 	},
 	
-	// return item from the inddex using its id
+	// return item from the index using its id
 	getByID: function(id) {
 		return this.index[id];
 	},

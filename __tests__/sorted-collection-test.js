@@ -4,7 +4,7 @@ var SortedCollection = require('../sorted-collection');
 
 describe('INSERT', function() {
     var sortedCollection = new SortedCollection();
-        
+    
     sortedCollection.insert({ id: 2 });
     sortedCollection.insert({ id: 1 });
     sortedCollection.insert({ id: 3 });
@@ -28,6 +28,39 @@ describe('INSERT', function() {
         expect(sortedCollection.index['3'].id).toBe(3);
         
         expect(Object.keys(sortedCollection.index).length).toBe(4);
+    });    
+});
+
+describe('INSERT DESC', function() {
+    var sortedCollection = new SortedCollection();
+    
+    sortedCollection.sortDefinition = [{ property: 'updatedDate', direction: 'desc' }, { property: 'id', direction: 'asc' }];
+    sortedCollection.insert({ id: 2, updatedDate: '2015-11-20T02:48:30.630Z' });
+    sortedCollection.insert({ id: 1, updatedDate: '2015-11-21T02:48:29.630Z' });
+    sortedCollection.insert({ id: 3, updatedDate: '2015-11-20T02:48:29.631Z' });
+    sortedCollection.insert({ id: -1, updatedDate: '2015-12-20T02:48:29.630Z' });
+    sortedCollection.insert({ id: -2, updatedDate: '2015-12-20T02:48:29.630Z' });
+    
+    it('ensures proper length', function() {
+        expect(sortedCollection.length).toBe(5);
+    });
+    
+    it('ensures proper order', function() {
+        expect(sortedCollection[0].id).toBe(-2);
+        expect(sortedCollection[1].id).toBe(-1);
+        expect(sortedCollection[2].id).toBe(1);
+        expect(sortedCollection[3].id).toBe(2);
+        expect(sortedCollection[4].id).toBe(3);
+    });
+    
+    it('ensures proper index', function() {
+        expect(sortedCollection.index['-1'].id).toBe(-1);
+        expect(sortedCollection.index['1'].id).toBe(1);
+        expect(sortedCollection.index['2'].id).toBe(2);
+        expect(sortedCollection.index['3'].id).toBe(3);
+        expect(sortedCollection.index['-2'].id).toBe(-2);
+        
+        expect(Object.keys(sortedCollection.index).length).toBe(5);
     });    
 });
 
